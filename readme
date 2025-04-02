@@ -1,36 +1,36 @@
-# detect the aruco of image by opencv
+# detect the aruco of image by opencv 识别二维码
 python aruco_grab_2.py
 
-# detect the color of image by opencv
+# detect the color of image by opencv 识别颜色
 python color_grab_2.py
 
-# detect the class of image by dnn and grab
+# detect the class of image by dnn and grab 识别种类
 python dnn_grab_2.py
 
-# move to the safety position
+# move to the safety position 回到安全位置，松轴==RB+back？ [-83.23, -140.53, 140.97, 58.71, -127.61, 5.71]
 python home_2.py
 
-# move to the position that is ready to grab
+# move to the position that is ready to grab 移动到准备抓取的坐标coords_ready = [190, -25, 245, -175, 0, -134] #准备好的坐标
 python ready.py
 
-# place to desktop
+# place to desktop 到桌子上？1移动到coords_ready 2打开抓夹 3 移动到零位
 python place_2.py
 
-# the parameters of grab
+# the parameters of grab 抓取参数
 GrabParams.py
 
-# read image without delay by opencv
+# read image without delay by opencv 视频捕捉
 VideoCapure.py
 
-# read image by opencv,  and publish the image topic by ros
+# read image by opencv,  and publish the image topic by ros 捕捉画面并发送
 opencv_pub_image.py
 
-# detect the class of image by yolo
+# detect the class of image by yolo 用yolo作物体识别
 opencv_yolo.py
 
-# the dnn model of object detection
+# the dnn model of object detection 物体识别模型
 beetle_obj.onnx
 
-# move to zero position
+# move to zero position 回到零位[0,0,0,0,0,0]
 python zero.py
 
