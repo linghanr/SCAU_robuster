@@ -9,13 +9,13 @@ angular = 0 # linear  = 1
 
 #grap
 def grap(flag):
-    if flag:
+    if flag: #True
         # close
         # self.mc.set_gripper_state(1, 0)
         time.sleep(0.1)
         mc.set_gripper_value(40,30)
         time.sleep(2)
-    else:
+    else: #False
         # open
         time.sleep(0.1)
         mc.set_gripper_value(255,30)

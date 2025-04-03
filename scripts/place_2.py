@@ -18,6 +18,7 @@ class Detect_marker(object):
     
 
     # Grasping motion
+    #执行run之后，坐标移动到指定位置，睡眠4秒，
     def run(self):
         coords = grabParams.coords_ready
 
@@ -27,7 +28,7 @@ class Detect_marker(object):
         
 
         # self.mc.send_coords([coords[0]+10,coords[1],grabParams.height_bias,coords[3],coords[4],coords[5]], 20, 0)
-        basic.grap(False)
+        basic.grap(False) #打开抓夹
 
         angles = [0, 0, 0, 0, 0, 0]
         self.mc.send_angles(angles,30)

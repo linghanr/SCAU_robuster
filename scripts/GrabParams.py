@@ -7,9 +7,9 @@ class GrabParams(object):
 	ratio = 0.21529956
 	
 	# increase x_bias to move front, or decrease x_bias to move back
-        x_bias =-5
+	x_bias =-5
 	# increase y_bias to move left, or decrease y_bias to move right
-        y_bias = 47-5
+	y_bias = 47-5
 	#               	 (+x)front
 	#                 	  ^
 	#				 	  :
@@ -26,7 +26,7 @@ class GrabParams(object):
 	height_bias = 150	
 
 	grab_direct = "front"
-	coords_ready = [190, -25, 245, -175, 0, -134]
+	coords_ready = [190, -25, 245, -175, 0, -134] #准备好的坐标
 
 	# grab_direct = "right"
 	# if grab_direct == "right":

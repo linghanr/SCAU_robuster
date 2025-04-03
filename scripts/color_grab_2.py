@@ -13,7 +13,7 @@ from GrabParams import grabParams
 import basic
 import argparse
 
-parser = argparse.ArgumentParser(description='manual to this script')
+parser = argparse.ArgumentParser(description='manual to this script') #
 parser.add_argument("--debug", type=bool, default="True")
 args = parser.parse_args()
 
